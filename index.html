@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Your Name</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header { background: #333; color: #fff; padding: 20px; text-align: center; }
+        .section { padding: 20px; }
+        #projects, #skills { display: flex; justify-content: space-around; }
+        .project, .skill { margin: 10px; }
+        form > * { display: block; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <a href="#about">About Me</a> | 
+            <a href="#projects">Projects</a> | 
+            <a href="#skills">Skills</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>Short bio here. Mention your study at Cardiff University.</p>
+    </div>
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project">Project 1</div>
+        <div class="project">Project 2</div>
+        <!-- Add more projects here -->
+    </div>
+    <div id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skill">Skill 1</div>
+        <div class="skill">Skill 2</div>
+        <!-- Add more skills here -->
+    </div>
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script>
+        // Add your JavaScript here for interactivity
+    </script>
+</body>
+</html>
