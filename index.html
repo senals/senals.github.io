@@ -60,10 +60,14 @@
             const navLinks = document.querySelectorAll('nav a');
             navLinks.forEach(link => {
                 link.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    const targetId = event.target.getAttribute('href').split('.html')[0];
-                    const targetElement = document.querySelector(targetId);
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    const href = event.target.getAttribute('href');
+                    if (href.startsWith('#')) {
+                        event.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
                 });
             });
         });
