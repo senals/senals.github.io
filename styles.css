@@ -33,6 +33,7 @@ nav a {
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
+    transition: background 0.3s;
 }
 
 nav a:hover {
@@ -105,4 +106,12 @@ form button[type="submit"]:hover {
     #projects, #skills {
         grid-template-columns: 1fr;
     }
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
 }
