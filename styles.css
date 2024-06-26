@@ -49,6 +49,28 @@ nav a:hover {
     margin: 20px 0;
 }
 
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.section-image {
+    flex: 1;
+    text-align: right;
+}
+
+.section-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* Projects and Skills grid */
 #projects, #skills {
     display: grid;
