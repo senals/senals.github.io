@@ -13,7 +13,7 @@ header {
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom:#6DA34D 3px solid;
+    border-bottom: #56445De8 3px solid;
 }
 
 header h1 {
@@ -26,8 +26,8 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
-    background: #6DA34D;
-    padding-bottom: 20px;
+    background: #6DA34D; /* Updated background color */
+    padding: 10px 0;
 }
 
 nav a {
