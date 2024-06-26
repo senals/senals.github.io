@@ -3,13 +3,13 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #6DA34D;
+    color: #333;
     background-color: #f4f4f4;
 }
 
 /* Header styles */
 header {
-    background: #35424a;
+    background: #6DA34D;
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
