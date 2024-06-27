@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senal Siriwardana</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header>
@@ -25,11 +25,14 @@
                     <p>Hello! I am a third-year computer science student at Cardiff University. Explore my portfolio to learn more about me and my work.</p>
                 </div>
                 <div class="section-image">
-                    <img src="Images/Myself.jpeg" alt="Myself">
+                    <img src="{{ url_for('static', filename='images/Myself.jpeg') }}" alt="Myself">
                 </div>
             </div>
         </section>
-        
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a third-year computer science student at Cardiff University with a passion for coding and problem-solving. I enjoy working on a variety of projects and constantly learning new technologies. In my free time, I love hiking and exploring new places.</p>
+        </section>
         <section id="projects" class="section">
             <h2>Projects</h2>
             <div class="project">
@@ -76,7 +79,6 @@
     <footer>
         <p>&copy; 2024 Senal Siriwardana</p>
     </footer>
-    <script src="main.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
-
