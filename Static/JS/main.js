@@ -1,11 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('nav a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const targetId = event.target.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        });
+document.addEventListener("DOMContentLoaded", function () {
+    const proceedButton = document.getElementById("proceed-button");
+    const introOverlay = document.getElementById("intro-overlay");
+    const portfolioContent = document.getElementById("portfolio-content");
+
+    // Initially, the proceed button should be visible
+    proceedButton.classList.add("visible");
+
+    proceedButton.addEventListener("click", function () {
+        // Fade out the intro overlay
+        introOverlay.classList.add("hidden");
+
+        // Fade in the portfolio content
+        setTimeout(() => {
+            portfolioContent.classList.remove("hidden");
+            portfolioContent.classList.add("visible");
+        }, 1000); // Wait for the intro overlay to fade out
     });
 });
+
