@@ -1,17 +1,10 @@
 /* General body styles */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     margin: 0;
     font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-main {
-    flex: 1;
+    color: #252422; /* Dark grey for text */
+    background-color: #FFFCF2; /* Light cream background */
 }
 
 /* Adjusted button hover styles */
@@ -19,7 +12,7 @@ main {
 nav a:hover,
 .form button[type="submit"]:hover,
 .project:hover, .skill:hover {
-    background: #4a8c3a; /* Darker green */
+    background: #252422; /* Dark grey */
 }
 
 .intro-content button.visible {
@@ -33,7 +26,7 @@ nav a:hover,
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ffffff;
+    background: #FFFCF2; /* Light cream background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,18 +34,6 @@ nav a:hover,
     opacity: 1;
     visibility: visible;
     transition: opacity 1s, visibility 1s;
-}
-
-#intro-overlay.hidden + main, 
-#intro-overlay.hidden + footer {
-    display: block;
-    opacity: 1;
-}
-
-main, footer {
-    display: none;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
 
 .intro-content {
@@ -63,19 +44,17 @@ main, footer {
     font-size: 1.5em;
     margin-bottom: 20px;
     animation: fadeInText 2s ease-in-out;
-    font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+    color: #252422; /* Dark grey */
 }
 
 .intro-content button {
     padding: 10px 20px;
-    background: #6DA34D;
-    color: #ffffff;
+    background: #558564; /* Primary color - Green */
+    color: #FFFCF2; /* Light cream text */
     border: none;
     cursor: pointer;
     font-size: 1em;
     transition: background 0.3s, opacity 0.5s, transform 0.3s;
-    opacity: 0; /* Initially hidden */
-    font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
 }
 
 .intro-content button.visible {
@@ -83,7 +62,7 @@ main, footer {
 }
 
 .intro-content button:hover {
-    background: #56445De8;
+    background: #252422; /* Dark grey on hover */
 }
 
 /* Keyframes for fade-in text animation */
@@ -100,11 +79,11 @@ main, footer {
 
 /* Header styles */
 header {
-    background: #6DA34D;
-    color: #ffffff;
+    background: #558564; /* Primary color - Green */
+    color: #FFFCF2; /* Light cream text */
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #56445De8 3px solid;
+    border-bottom: #252422 3px solid; /* Dark grey border */
     display: flex;
     justify-content: space-between; /* Adjusted for layout */
     align-items: center; /* Center align items vertically */
@@ -122,12 +101,12 @@ nav {
     display: flex;
     justify-content: space-between; /* Distribute items to the edges */
     align-items: center; /* Center align items vertically */
-    background: #6DA34D; /* Updated background color */
+    background: #558564; /* Primary color - Green */
     padding: 10px 50px; /* Adjusted padding */
 }
 
 nav a {
-    color: #ffffff;
+    color: #FFFCF2; /* Light cream text */
     text-decoration: none;
     padding: 10px 20px;
     transition: background 0.3s, transform 0.3s;
@@ -135,7 +114,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #56445De8;
+    background: #252422; /* Dark grey on hover */
     border-radius: 5px;
     transform: scale(1.05);
 }
@@ -143,7 +122,7 @@ nav a:hover {
 /* Section styles */
 .section {
     padding: 20px;
-    background: #ffffff;
+    background: #FFFCF2; /* Light cream background */
     margin: 20px 0;
     animation: fadeIn 1s ease-in;
 }
@@ -158,6 +137,7 @@ nav a:hover {
     flex: 1;
     margin-right: 20px;
     font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+    color: #252422; /* Dark grey text */
 }
 
 .section-image {
@@ -195,8 +175,8 @@ nav a:hover {
 }
 
 .project, .skill {
-    background: #56445De8;
-    color: #ffffff;
+    background: #558564; /* Primary color - Green */
+    color: #FFFCF2; /* Light cream text */
     padding: 10px;
     text-align: center;
     border-radius: 5px;
@@ -209,100 +189,67 @@ nav a:hover {
 }
 
 /* Contact form styles */
-#contact {
+form {
+    background: #DBE9EE; /* Secondary color - Light blue */
     padding: 20px;
-    background: #ffffff;
-    margin: 20px 0;
-    animation: fadeIn 1s ease-in;
-}
-
-#contact form {
-    display: flex;
-    flex-direction: column;
-}
-
-#contact label {
-    margin-top: 10px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#contact input,
-#contact textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 100px; /* Adjust as necessary */
 }
 
-#contact button {
-    margin-top: 20px;
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+    color: #252422; /* Dark grey text */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
     padding: 10px;
-    background: #35424a;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    font-family: 'Times New Roman', Times, serif;
-    transition: background 0.3s, transform 0.3s;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+    background: #FFFCF2; /* Light cream background */
+    color: #252422; /* Dark grey text */
 }
 
-#contact button:hover {
-    background: #56445De8;
+form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #252422; /* Dark grey */
+    color: #FFFCF2; /* Light cream text */
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+}
+
+form button[type="submit"]:hover {
+    background: #CC7178; /* Darker red on hover */
     transform: scale(1.05);
 }
 
-
-/* Footer styles */
-footer {
-    background: #6DA34D;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: auto;
-}
-
-/* Fade in effect for main content */
-main.hidden {
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-main.visible {
-    opacity: 1;
-}
-
-/* Animation for fading in sections */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Additional media queries for responsiveness */
+/* Responsive design */
 @media (max-width: 768px) {
-    .section-content {
-        flex-direction: column;
-    }
-
-    .section-image {
-        text-align: center;
-        margin-top: 20px;
-    }
-
     #projects, #skills {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 1200px) {
-    .nav-left {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-.hidden {
-    display: none;
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #558564; /* Primary color - Green */
+    color: #FFFCF2; /* Light cream text */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100; /* Ensure the footer stays on top of other content */
 }
